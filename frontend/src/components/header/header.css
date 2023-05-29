@@ -1,0 +1,66 @@
+.header {
+    background-color: var(--color1);
+    border-bottom: 1px solid var(--color3);
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.routes {
+    display: flex;
+    gap: 16px;
+}
+
+.routes a {
+    all: unset;
+    cursor: pointer;
+    font-size: 24px;
+    width: fit-content;
+}
+
+.routes a.active {
+    border-bottom: 3px solid darkblue;
+}
+
+.MuiMenu-list li {
+    display: block;
+    text-align: center;
+}
+
+.menu {
+    display: none !important;
+    cursor: pointer;
+}
+
+.user-info .user {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 530px) {
+    .menu {
+        display: block !important;
+    }
+
+    .routes {
+        position: absolute;
+        left: -300px;
+        top: 50px;
+        background-color: var(--color3);
+        border-radius: 12px;
+        padding: 24px;
+        flex-direction: column;
+        transition: 0.4s;
+    }
+
+    .menu:hover + .routes,
+    .routes:hover {
+        left: 12px;
+    }
+
+    .routes a.active {
+        border-color: var(--color1);
+        color: var(--color1);
+    }
+}

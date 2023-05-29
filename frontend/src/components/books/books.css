@@ -1,0 +1,163 @@
+.books {
+    background: var(--color1);
+    max-width: 100vw;
+    min-height: 100vh;
+    color: var(--color3);
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.books h1 {
+    text-align: center;
+}
+
+.books > div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.search-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.search-wrapper input {
+    outline: none;
+    border: 1px solid var(--color3);
+    padding: 8px 6px;
+    border-radius: 4px;
+}
+
+.books-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 16px;
+}
+
+.book-card {
+    border: 1px solid var(--color3);
+    padding: 16px;
+    border-radius: 12px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.book-card img {
+    border: 1px solid var(--color2);
+    border-radius: 8px;
+    /* width: 200px; */
+    height: 240px;
+    margin: auto;
+    display: block;
+}
+
+.book-card p {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.book-card p span {
+    font-weight: 600;
+    font-size: 22px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.add-book-wrapper {
+    border: 1px solid var(--color3);
+    padding: 36px 24px;
+    border-radius: var(--box-border-radius);
+}
+
+.add-book-wrapper div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+.add-book-wrapper > div > div input,
+.add-book-wrapper > div > div select,
+.add-book-wrapper > div > div textarea {
+    outline: none;
+    border: 1px solid var(--color3);
+    padding: 8px 6px;
+    border-radius: 4px;
+}
+
+.add-book-wrapper textarea {
+    resize: none;
+    height: 90px;
+}
+
+.add-book-wrapper .upload-area {
+    padding: 8px 0;
+}
+
+.add-book-wrapper .upload-area input {
+    border-style: dashed;
+}
+
+.confirm-box .info {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.confirm-box .info span {
+    color: red;
+    font-weight: 600;
+}
+
+.confirm-box .info input {
+    outline: none;
+    border: 1px solid var(--color3);
+    padding: 8px 6px;
+    border-radius: 4px;
+}
+
+.confirm-box .cancel {
+    border-color: red;
+    color: red;
+}
+
+.confirm-box .confirm {
+    border-color: green;
+    color: green;
+}
+
+.confirm-box button:hover {
+    color: #FFFFFF;
+    border-color: var(--color3);
+}
+
+.book-card.clickable {
+    cursor: pointer;
+}
+
+.view-book-box .book-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 1.5rem;
+}
+
+.view-book-box .book-info .img-box img {
+    height: 420px;
+    width: fit-content;
+    margin: auto;
+    display: block;
+}

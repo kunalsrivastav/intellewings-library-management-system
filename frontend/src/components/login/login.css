@@ -1,0 +1,76 @@
+.login-component {
+    background-color: var(--color1);
+    width: 100%;
+    min-height: 100vh;
+    color: var(--color3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.login-component h1 {
+    text-align: center;
+}
+
+.login-form {
+    border: 2px solid var(--color3);
+    border-radius: var(--box-border-radius);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.login-form > span {
+    font-size: 1.5rem;
+}
+
+.login-form > div {
+    width: 100%;
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+
+}
+
+.login-form > div input {
+    outline: none;
+    border: 1px solid var(--color3);
+    padding: 8px 6px;
+    border-radius: 4px;
+    flex-grow: 1;
+}
+
+.login-form > div > div {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.login-form > div > div > span {
+    border: 1px solid var(--color3);
+    height: 100%;
+    padding: 0 2px;
+    border-radius: 4px;
+    background: #FFFFFF;
+}
+
+.login-form > div > div > span svg {
+    height: 100%;
+}
+
+.login-form button {
+    cursor: pointer;
+}
+
+.login-form p {
+    font-weight: 600;
+}
+
+.login-form p span {
+    color: darkblue;
+    cursor: pointer;
+}
