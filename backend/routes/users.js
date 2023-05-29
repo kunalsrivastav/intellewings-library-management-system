@@ -83,7 +83,7 @@ router.post('/login', async (req, res) => {
                 res.status(403).send({ error: 'Incorrect Password.' });
             }
         } else {
-            res.status(403).send({ error: 'Invalid Email.' });
+            res.status(403).send({ error: 'User not found.' });
         }
     } else {
         res.status(400).send({ error: 'Either email or password is Invalid.' });

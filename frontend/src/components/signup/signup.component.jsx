@@ -39,7 +39,7 @@ const Signup = () => {
                 setSnack({ ...snack, message: message, open: true, severity: 'success' });
                 navigate('/dashboard');
             } catch (error) {
-                setSnack({ ...snack, message: error?.response?.data?.error, open: true, severity: 'error' });
+                setSnack({ ...snack, message: error?.response?.data?.error || 'Something went wrong!', open: true, severity: 'error' });
             }
             setLoader(false);
         }
