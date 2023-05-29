@@ -26,4 +26,6 @@ app.use('/api/books', books);
 
 const PORT = process.env.PORT;
 
-app.listen(PORT || 8080, () => console.log(`Listening on port ${PORT}...`));
+// app.listen(PORT || 8080, () => console.log(`Listening on port ${PORT}...`));
+
+module.exports = app;
