@@ -11,4 +11,8 @@ router.get('/', (req, res) => {
     res.status(200).type('html').sendFile(path.resolve(__dirname, '../static/server-status.html'));
 });
 
+router.get('/health', (req, res) => {
+    res.status(200).type('html').send({ status: 'OK!' });
+});
+
 module.exports = router;
