@@ -8,7 +8,11 @@ makes a GET request to the root URL, the server will respond by sending the cont
 "path.resolve" method is used to ensure that the correct file path is used regardless of the current
 working directory of the server. */
 router.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../static/server-status.html'));
+    res.status(200).type('html').sendFile(path.resolve(__dirname, '../static/server-status.html'));
+});
+
+router.get('/health', (req, res) => {
+    res.status(200).type('html').send({ status: 'OK!' });
 });
 
 module.exports = router;
