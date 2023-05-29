@@ -10,6 +10,12 @@ import Home from "./components/home/home.component";
 
 export const appRoutes = [
     {
+        path: '/',
+        component: <Navigate to="/dashboard" />,
+        exact: true,
+        key: 'initial-route'
+    },
+    {
         path: '/dashboard',
         component: <Dashboard />,
         exact: true,
