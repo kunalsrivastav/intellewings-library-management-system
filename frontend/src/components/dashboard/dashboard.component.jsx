@@ -63,7 +63,7 @@ const Dashboard = () => {
                                         <Typography sx={{ width: '40%', flexShrink: 0 }}>
                                             {categoryInfo?.categoryName}
                                         </Typography>
-                                        <Typography>{categoryInfo?.total} Books</Typography>
+                                        <Typography>{categoryInfo?.total} {categoryInfo?.total >= 2 ? 'Books' : 'Book'}</Typography>
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         <div>
